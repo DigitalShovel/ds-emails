@@ -42,3 +42,59 @@ h2 {
   border-radius: 10px;
   background-color: #fff;
 }
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: #627D98;
+  border: 0;
+  color: white;
+  padding: 0.45rem 0.75rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+
+.button:hover {
+  background-color: #486581;
+}
+
+.button:disabled {
+  background-color: #ddd;
+}
+
+.button:disabled:hover {
+  background-color: #ddd;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button-select {
+
+}
+
+.button-copy {
+  background-color: #17B897;
+}
+
+.button-copy:hover {
+  background-color: #079A82;
+}
+
+@media (max-width: 1350px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
