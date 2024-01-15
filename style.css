@@ -17,14 +17,7 @@ body {
 }
 
 h2 {
-  position: relative;
-  z-index: -1;
-  padding: 0.75rem 1.5rem 1.75rem 1rem;
-  margin: 0;
-  margin-bottom: -1rem;
-  background-color: #002159;
-  color: white;
-  border-radius: 10px 10px 0 0;
+ margin: 0;
 }
 
 .container {
@@ -79,6 +72,21 @@ h2 {
   border: 2px solid #002159;
   border-radius: 10px;
   background-color: #fff;
+}
+
+.department-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  position: relative;
+  z-index: -1;
+  padding: 0.75rem 1.5rem 1.75rem 1rem;
+  margin: 0;
+  margin-bottom: -1rem;
+  background-color: #002159;
+  color: white;
+  border-radius: 10px 10px 0 0;
 }
 
 .button-container {
