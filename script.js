@@ -33,7 +33,7 @@ document.querySelectorAll('.button-copy').forEach(buttonCopy => {
         event.stopPropagation(); // Prevent the document click event from firing
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
-        alert('Copied selection to clipboard!');
+        alert('Successfully copied selection to clipboard! You can now paste it into your email signature.');
     });
 });
 
