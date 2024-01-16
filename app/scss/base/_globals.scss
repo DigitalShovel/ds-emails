@@ -1,0 +1,42 @@
+/* Scrollbar Adjustments */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(206, 93%, 73%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(210, 83%, 53%);
+}
+
+html {
+  font-family: Inter, sans-serif, Roboto, sans-serif;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+
+  @media (max-width: 768px) {
+    scroll-padding-top: 9rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
