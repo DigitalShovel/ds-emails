@@ -1,6 +1,6 @@
 let previousCopyButton = null;
 
-document.querySelectorAll('.button-select').forEach(buttonSelect => {
+document.querySelectorAll('.btn__select').forEach(buttonSelect => {
     buttonSelect.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the document click event from firing
 
@@ -18,7 +18,7 @@ document.querySelectorAll('.button-select').forEach(buttonSelect => {
                 window.getSelection().removeAllRanges(); // Clear previous selection
                 window.getSelection().addRange(range);
 
-                const copyButton = this.parentElement.querySelector('.button-copy');
+                const copyButton = this.parentElement.querySelector('.btn__copy');
                 if (copyButton) {
                     copyButton.removeAttribute('disabled');
                     previousCopyButton = copyButton; // Keep track of the current copy button
@@ -28,7 +28,7 @@ document.querySelectorAll('.button-select').forEach(buttonSelect => {
     });
 });
 
-document.querySelectorAll('.button-copy').forEach(buttonCopy => {
+document.querySelectorAll('.btn__copy').forEach(buttonCopy => {
     buttonCopy.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the document click event from firing
         document.execCommand('copy');
