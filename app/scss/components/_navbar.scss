@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 69px;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -5,9 +9,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  padding: 1rem 2rem;
+  padding: 1rem calc(2rem + 10px);
   background-color: #fff;
-  border-bottom: 1px solid hsl(210, 36%, 96%);
+  border-bottom: 1px solid #f1f5f8;
+  box-shadow: var(--shadow-elevation-low);
 
   @media (max-width: 768px) {
     justify-content: center;

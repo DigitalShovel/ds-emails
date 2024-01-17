@@ -3,6 +3,12 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  overflow: auto;
+  height: calc(93dvh - (var(--navbar-height)));
+
+  @media (max-width: 768px) {
+    height: calc(88dvh - (var(--navbar-height)));
+  }
 }
 
 .grid {
