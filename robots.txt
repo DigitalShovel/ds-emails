@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# This prevents search engines from indexing the site
+# but doesn't actually restrict access
